@@ -5,7 +5,7 @@ M.instance = nil
 function M.setup()
   vim.api.nvim_create_user_command("InstallThings", function()
     if M.instance == nil then
-      M.instance = require("banana.instance").newInstance("installer", "installer")
+      M.instance = require("banana.instance").newInstance("core", "installer")
     end
     M.instance:open()
   end, {})
