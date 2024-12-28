@@ -51,7 +51,5 @@
     <br />
 
     <div id="container"></div>
-
-    <script src="installer"></script>
   </body>
 </nml>
