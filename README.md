@@ -1,0 +1,1 @@
+# silver-search.nvim
