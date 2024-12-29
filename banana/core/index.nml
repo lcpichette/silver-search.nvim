@@ -2,12 +2,12 @@
   <head>
     <style>
       nml {
-        /* Translates to:
+        /* Translates to: https://github.com/CWood-sdf/banana.nvim/wiki/Properties
            vim.api.nvim_set_hl(0, "Override", {
               bg = "..."
             })
          */
-        hl-bg: rgb(255,0,0);
+        hl-bg: linear-gradient(45deg, orange, blue);
         width: 75%;
         height: 75%;
         top: 12%;
