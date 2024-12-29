@@ -14,25 +14,16 @@
         left: 12%;
       }
 
-      #topnav > div {
-        text-align: center;
-        margin: 1ch 0ch;
-        flex-grow: 1;
-        /* use lazy.nvim's colors */
-        hl-bg: hl-extract(bg, CursorLine);
-      }
-      #topnav > div.selected {
-        /* use lazy.nvim's colors */
-        hl-bg: hl-extract(bg, Visual);
-      }
-
       #container {
         padding-left: 2ch;
+        hl-bg: rgb(255, 128, 0);
       }
     </style>
     <title>Install things</title>
   </head>
   <body>
-    <div id="container"></div>
+    <div id="container">
+      Content
+    </div>
   </body>
 </nml>
