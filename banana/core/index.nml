@@ -2,7 +2,12 @@
   <head>
     <style>
       nml {
-        background-color: #ff0000;
+        /* Translates to:
+           vim.api.nvim_set_hl(0, "Override", {
+              bg = "..."
+            })
+         */
+        hl-bg: #ff0000;
         width: 75%;
         height: 75%;
         top: 12%;
