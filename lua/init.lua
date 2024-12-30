@@ -27,10 +27,13 @@ function M.setup()
         row = win_row,
         col = win_col,
         style = "minimal",
-        border = "rounded", -- You can use "single", "double", "shadow", etc.
+        border = "rounded",
       }
 
       local bufnr = vim.api.nvim_create_buf(false, true)
+
+      vim.bo[bufnr].modifiable = true
+      vim.bo[bufnr].buftype = "" -- Clear 'nofile' buftype for normal editing
 
       local win_id = vim.api.nvim_open_win(bufnr, true, opts)
       vim.api.nvim_win_set_cursor(win_id, { 1, 1 })
