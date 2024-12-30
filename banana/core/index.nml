@@ -16,7 +16,7 @@
             })
          */
         padding-left: 2ch;
-        hl-bg: rgb(255, 128, 0);
+        hl-bg: rgb(0, 100, 0);
 
         height: 75%;
         width: 100%;
@@ -25,7 +25,7 @@
       #input {
         height: 25%;
         width: 100%;
-        hl-bg: rgb(255, 0, 0);
+        hl-bg: rgb(100, 0, 0);
       }
     </style>
     <title>Install things</title>

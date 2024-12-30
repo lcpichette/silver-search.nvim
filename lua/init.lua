@@ -7,7 +7,7 @@ function M.setup()
     if M.instance == nil then
       M.instance = require("banana.instance").newInstance("core", "installer")
       local el = M.instance:getElementById("input")
-      el:attachRemap("n", "<CR>", { "hover" }, function()
+      el:attachRemap("n", "i", { "hover" }, function()
         local input = vim.fn.input("Input text: ")
         el:setTextContent(input)
       end, {})
