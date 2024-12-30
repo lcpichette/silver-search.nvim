@@ -10,33 +10,32 @@ function M.setup()
 
       local element_width = el:getWidth()
       local element_height = el:getHeight()
-      local element_x = el:getX()
-      local element_y = el:getY()
       local cell_width = 7
       local cell_height = 14
+      print(element_width, element_height)
 
       local win_width = math.floor(element_width / cell_width)
       local win_height = math.floor(element_height / cell_height)
-      local win_row = math.floor(element_y / cell_height)
-      local win_col = math.floor(element_x / cell_width)
 
       local opts = {
         relative = "editor",
         width = win_width,
         height = win_height,
-        row = win_row,
-        col = win_col,
+        row = 0,
+        col = 0,
         style = "minimal",
         border = "rounded",
       }
 
       local bufnr = vim.api.nvim_create_buf(false, true)
+      print(bufnr)
 
       vim.bo[bufnr].modifiable = true
       vim.bo[bufnr].buftype = "" -- Clear 'nofile' buftype for normal editing
 
       local win_id = vim.api.nvim_open_win(bufnr, true, opts)
       vim.api.nvim_win_set_cursor(win_id, { 1, 1 })
+      print(win_id)
 
       local function on_buffer_change()
         print("Buffer content changed!")
