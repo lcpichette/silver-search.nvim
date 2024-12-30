@@ -4,9 +4,13 @@ M.instance = nil
 
 function M.setup()
   vim.api.nvim_create_user_command("InstallThings", function()
+    print("test")
     if M.instance == nil then
+      print("test 2")
       M.instance = require("banana.instance").newInstance("core", "installer")
+      print("test 3")
       local el = M.instance:getElementById("input")
+      print("test 4")
 
       local element_width = el:getWidth()
       local element_height = el:getHeight()
