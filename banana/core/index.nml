@@ -2,12 +2,7 @@
   <head>
     <style>
       nml {
-        /* Translates to: https://github.com/CWood-sdf/banana.nvim/wiki/Properties
-           vim.api.nvim_set_hl(0, "Override", {
-              bg = "..."
-            })
-         */
-        hl-bg: linear-gradient(45deg, orange, blue);
+        /* CANNOT COLOR nml */
         width: 75%;
         height: 75%;
         top: 12%;
@@ -15,8 +10,22 @@
       }
 
       #container {
+        /* Translates to: https://github.com/CWood-sdf/banana.nvim/wiki/Properties
+           vim.api.nvim_set_hl(0, "Override", {
+              bg = "..."
+            })
+         */
         padding-left: 2ch;
         hl-bg: rgb(255, 128, 0);
+
+        height: 75%;
+        width: 100%;
+      }
+
+      #input {
+        height: 25%;
+        width: 100%;
+        hl-bg: rgb(255, 0, 0);
       }
     </style>
     <title>Install things</title>
@@ -24,6 +33,9 @@
   <body>
     <div id="container">
       Content
+    </div>
+
+    <div id="input">
     </div>
   </body>
 </nml>
